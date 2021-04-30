@@ -12,9 +12,9 @@ SIFT特征对旋转、尺度缩放、亮度变化等保持不变性，是非常�
 
 下图为实验结果：
 
-![Lenna](E:\jetbrain\SIFT\picture\Lenna.jpg)
+![Lenna](picture/Lenna.jpg)
 
-![SIFT_Lenna](E:\jetbrain\SIFT\picture\SIFT_Lenna.jpg)
+![SIFT_Lenna](picture/SIFT_Lenna.jpg)
 
 上图为原图片，下图为提取了特征点的图片，黄色点即为提取的特征点。
 
@@ -24,7 +24,7 @@ SIFT特征点提取的具体流程主要是先对图片进行高斯模糊，构�
 
 1. SIFT提取特征点时需要构建高斯金字塔，故首先需要对图片进行高斯模糊操作，卷积核的半径由sigma决定，一般来说超过3*sigma距离以外贡献就比较小。故二维卷积核的尺寸为（6 * sigma + 1）*（6 * sigma + 1），但由于二维卷积核耗费时间太长，再加上高斯函数具有线性可分：故可以用两个一维卷积核分别在水平和垂直方向进行卷积，相加后可得到同样的结果，且速度提升明显。示意图如下
 
-   ![Gaussian](E:\jetbrain\SIFT\picture\Gaussian.png)
+   !![Gaussian](picture/Gaussian.png)
 
    函数声明如下：
 
