@@ -1,0 +1,4 @@
+"E:\jetbrain\Clion\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" E:\jetbrain\SIFT
+-- Configuring done
+-- Generating done
+-- Build files have been written to: E:/jetbrain/SIFT/cmake-build-debug
